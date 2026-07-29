@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="90" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="wave-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#4FACFE" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#9333EA" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="wave-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9333EA" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#00F2FE" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+  <!-- Background Wave -->
+  <path d="M0,40 C300,90 600,10 900,60 C1050,85 1150,30 1200,40 L1200,120 L0,120 Z" fill="url(#wave-grad-2)">
+    <animate attributeName="d" 
+      values="M0,40 C300,90 600,10 900,60 C1050,85 1150,30 1200,40 L1200,120 L0,120 Z;
+              M0,60 C350,20 650,80 950,30 C1080,60 1160,20 1200,50 L1200,120 L0,120 Z;
+              M0,40 C300,90 600,10 900,60 C1050,85 1150,30 1200,40 L1200,120 L0,120 Z"
+      dur="8s" repeatCount="indefinite" />
+  </path>
+  <!-- Foreground Wave -->
+  <path d="M0,60 C300,10 600,80 900,30 C1050,55 1150,15 1200,45 L1200,120 L0,120 Z" fill="url(#wave-grad-1)">
+    <animate attributeName="d" 
+      values="M0,60 C300,10 600,80 900,30 C1050,55 1150,15 1200,45 L1200,120 L0,120 Z;
+              M0,30 C250,70 550,20 850,70 C1000,35 1120,65 1200,25 L1200,120 L0,120 Z;
+              M0,60 C300,10 600,80 900,30 C1050,55 1150,15 1200,45 L1200,120 L0,120 Z"
+      dur="6s" repeatCount="indefinite" />
+  </path>
+</svg>
